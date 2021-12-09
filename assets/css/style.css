@@ -1,0 +1,326 @@
+
+.fondoLogin{
+    background-image: url("../images/fondoLogin.png");
+   
+  }
+  .textColorWhite{
+    color:white;
+  }
+  
+  .btnTextColorGray{
+    color: #777777;
+    background-color: #C1C1BD;
+    border-color: #C1C1BD;
+  }
+  
+  .btnAmarillo{
+    color: #000 !important;
+    background-color: #D9C61D;
+    border-color: #D9C61D;
+    line-height: 16px !important;
+  }
+
+  .btnTextColorWhite{
+    color: #000;
+    background-color: white;
+    border-color: white;
+  }
+  
+  .colorFondoModalBienvenido{
+      background-color: #1d273e;
+  }
+
+  .colorAmarilloA{
+      color: #D9C61D;
+  }
+
+  .fotoPerfilLogin2{
+      width: 41%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+
+  .no-padding-left{
+      padding-left: 0px !important;
+  }
+  
+  .no-padding-right{
+      padding-right: 0px !important;
+  }
+
+  .no-margin-left{
+    margin-left: 0px !important;
+}
+
+  .eliminarCuenta{
+    text-align: right;
+    padding-right: 29px;
+  }
+
+  .colorgrayBottom {
+    font-size: 13px;
+    color: rgb(5, 5, 5);
+    background-color: #9A9A99;
+    padding: 4px 17px;
+    display: inline-block;
+    border-radius: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all .3s;
+  
+  }
+
+  .colorgrayBottom:hover{
+    color: #FFF !important;
+  }
+
+  .colorRedBottom:hover{
+    color: #FFF !important;
+  }
+
+  .colorInputBgGray{
+    background-color: #9A9A99 !important;
+  }
+
+  .colorInputBgWhite{
+    background-color: #fafafa !important;
+  }
+
+  .iconDiscord{
+    width: 53%;
+    padding-bottom: 2px;
+  }
+
+  .tituloConocenos{
+    padding-top: 84px !important;
+    text-align: left !important;
+    padding-bottom: 0px !important;
+  }
+
+  .textColorGray{
+    color: #9A9A99;
+  }
+
+
+
+
+
+/****** RESPONSIVO CUSTOM JV*********/
+
+@media (min-width: 0px) and (max-width: 767.98px) { 
+    .no-padding-left-responsivo{
+      padding-left: 0px;
+    }
+
+    .no-padding-right-responsivo{
+      padding-right: 0px;
+    }
+  
+    .btnMenu{
+      margin-top: 10px;
+    }
+
+    .imgFooter{
+      width: 50%;
+    }
+    .imgCenterResponsive{
+      text-align: center;
+    }
+    .imgBgOnlyResponsive{
+      background-image: url('../images/fondoResponsivo.png');
+      background-repeat: no-repeat;
+    }
+
+    .padding-bottom-pagResponsive{
+        padding-bottom: 153px !important;
+    }
+    #dvRegistrarse{
+      padding-top: 30px !important;
+      padding-bottom: 25px !important;
+    }
+
+    .header-area.header-sticky .nav {
+      margin-top: 101px!important;
+
+   }
+   #logoResponsivo{
+    width: 30% !important;
+    padding-top: 25px !important;
+    margin-left: 0px !important;
+   }
+   #bienvenidoResponsivo{
+     
+     width: 40% !important;
+   }
+   .text-center-responsivo{
+    text-align: center;
+   }
+
+   .botoneraBienvenidoResponsivo{
+     margin-top: 10% !important;
+   }
+
+   .divfotoPerfilResponsivo{
+     text-align: center;
+   }
+
+   .fotoPerfilResponsivo{
+     width: 20% !important;
+   }
+
+   .fotoPerfilLogin2{
+     width: 10% !important;
+   }
+
+   .headerResponsivoLogeado{
+     margin-top: 37px !important;
+   }
+
+   .background-header {
+    margin-top: 0px !important;
+   }
+
+   .preguntaSemanalResponsivo{
+    padding-top: 17px !important;
+    padding-bottom: 45px !important;
+    
+   }
+
+   .no-margin-top-footer-responsivo{
+      margin-top: 20px;
+   }
+
+   .fotoPreguntaSemanalResponsivo{
+     width: 70% !important;
+     margin: 3.5rem !important;
+     margin-top: 0px !important;
+   }
+
+   .fotoSeParteComunidadResponsivo{
+      width: 80% !important;
+      margin: 2.5rem !important;
+   }
+
+   .SeParteComunidadResponsivoH2{
+    margin-bottom: 0px !important;
+   }
+
+   .logoGooglePerfil{
+      width: 7% !important;
+   }
+
+   
+   .tituloConocenosResponsivo{
+    padding-top: 101px !important;
+  }
+
+  .no-margin-top-responsivo{
+    margin-top: 0px !important;
+ }
+
+ .no-margin-bottom-responsivo{
+    margin-bottom: 0px !important;
+  }
+
+  .no-padding-top-responsivo{
+    padding-top: 0px !important;
+  }
+
+}
+  
+ /* @media (min-width: 576px) and (max-width: 767.98px) { 
+    .btnMenu{
+      margin-top: 10px;
+    }
+    .imgFooter{
+      width: 50%;
+    }
+    .imgCenterResponsive{
+      text-align: center;
+    }
+    .imgBgOnlyResponsive{
+      background-image: url('../img/fondoResponsivo.png');
+    }
+
+    .padding-bottom-pagResponsive{
+        padding-bottom: 153px !important;
+    }
+   } */  
+  
+  @media (min-width: 768px) {
+    .btnMenu{
+      margin-top: 10px;
+    }
+    .imgFooter{
+      width: 50%;
+    }
+    .imgCenterResponsive{
+      text-align: center;
+    }
+
+    .background-header {
+     
+      background-color: #060F20 !important;
+      height: 80px!important; 
+    }
+
+    .logoGooglePerfil{
+      width: 14%;
+      margin-left: 23px;
+    }
+    .fotoPerfilPerfil{
+      width: 50%;
+      padding-top: 36px;
+    }
+
+  
+  }
+  
+  @media (min-width: 992px) { 
+    .btnMenu{
+      margin-right: 10px;
+    }
+    .padding-bottom-pagResponsive{
+        padding-bottom: 0px !important;
+    }
+
+    .background-header {
+     
+      background-color: #060F20 !important;
+      height: 80px!important; 
+    }
+
+    .logoGooglePerfil{
+      width: 14%;
+      margin-left: 23px;
+    }
+    .fotoPerfilPerfil{
+      width: 50%;
+      padding-top: 36px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .btnMenu{
+      margin-right: 10px;
+    }
+    .padding-bottom-pagResponsive{
+        padding-bottom: 0px !important;
+    }
+
+    .background-header {
+     
+      background-color: #060F20 !important;
+      height: 80px!important; 
+    }
+
+    .logoGooglePerfil{
+      width: 14%;
+      margin-left: 23px;
+    }
+
+    .fotoPerfilPerfil{
+      width: 50%;
+      padding-top: 124px;
+    }
+  }
