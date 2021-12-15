@@ -38,20 +38,14 @@ https://templatemo.com/tm-569-edu-meeting
   <!-- Sub Header -->
   <div class="sub-header">
     <div class="container">
-      <div class="row">
-          <!-- <div class="col-lg-8 col-sm-8">
-          <div class="left-content">
-          <p>This is an educational <em>HTML CSS</em> template by TemplateMo website.</p>  
-          </div>
-        </div>-->
-        
+      <div class="row">        
         <div class="col-lg-8 col-sm-8">
           <div class="right-icons">
             <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-              <li class="no-margin-left"><a href="#"><img src="assets/images/discord.svg" alt="" class="iconDiscord"></a></li>
+              <li><a href="https://www.facebook.com/groups/951050702493025"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/_cortatuweb"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://instagram.com/cortatuweb?r=nametag"><i class="fa fa-instagram"></i></a></li>
+              <li class="no-margin-left"><a href="https://discord.gg/XJ45SgyH"><img src="assets/images/discord.svg" alt="" class="iconDiscord"></a></li>
               
             </ul>
           </div>
@@ -74,18 +68,16 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </div>
 
-  <!-- ***** Header Area Start ***** -->
+ 
   <header class="header-area header-sticky">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <nav class="main-nav">
-                    <!-- ***** Logo Start ***** -->
-                   <!-- <a href="index.html" class="logo"></a> -->
+
                     <a class="d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block" alt="" href="index.html"><img src="assets/images/logo/logoFooter.png" alt="" class="img-fluid logo " style="width: 10%;padding-top: 13px;"></a>
                     <a class="d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" alt="" href="index.html"><img id="logoResponsivo" src="assets/images/logoNegro.png" alt="" class="img-fluid logo " style="width: 10%;padding-top: 13px;"></a>
-                    <!-- ***** Logo End ***** -->
-                    <!-- ***** Menu Start ***** -->
+
                     <ul class="nav">
                         
                         <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="registrarse.html">Registrarse</a></li>
@@ -95,13 +87,13 @@ https://templatemo.com/tm-569-edu-meeting
                             <a href="javascript:void(0)">Infórmate</a>
                             <ul class="sub-menu">
                                 <li><a href="ciberbullying.html">¿Qué es el ciberbulliying?</a></li>
-                                <li><a href="#">Estudios y estadísticas</a></li>
-                                <li><a href="#">Características del agresor</a></li>
-                                <li><a href="#">Tips para una navegación segura</a></li>
+                                <li><a href="estudiosEstadisticas.html">Estudios y estadísticas</a></li>
+                                <li><a href="carasteristicas-agresor.html">Características del agresor</a></li>
+                                <li><a href="tips-navegacion-segura.html">Tips para una navegación segura</a></li>
                             </ul>
                         </li>
-                        <li class="scroll-to-section"><a href="#">Pregunta semanal</a></li> 
-                        <li class="scroll-to-section"><a href="#">Envíanos tu historia</a></li> 
+                        <li class=""><a href="javascript:validaLogeo();">Pregunta semanal</a></li> 
+                        <li class=""><a href="javascript:validaLogeo();">Envíanos tu historia</a></li> 
                     </ul>        
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -166,12 +158,7 @@ https://templatemo.com/tm-569-edu-meeting
                     <button type="button" class="btn btnTextColorWhite rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong><img
                                 src="assets/images/icons8-logo-de-google.svg" style="width: 20px;" /> Iniciar sesión </strong></button>
                 </div>
-
-
-
-
-
-            </form>
+        </form>
 
         </div>
     </div>
@@ -241,7 +228,7 @@ https://templatemo.com/tm-569-edu-meeting
         </div>
         <div class="row text-center botoneraBienvenidoResponsivo">
           <div class="col-md-12">
-            <a href="indexLogeado.html" class="btn colorRedBottom">Entrar</a>
+            <a href="javascript:fnSetLocalStorage();" class="btn colorRedBottom">Entrar</a>
           </div>
         </div>
         <div class="row text-center mt-2 mb-4">
@@ -276,6 +263,8 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
   </div>
 </div>
+
+<div id="dvModalHistoria"></div>
   
 
   <!-- Scripts -->
@@ -290,6 +279,7 @@ https://templatemo.com/tm-569-edu-meeting
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="js/ingresaHistoria.js"></script>
     <script>
         let fnValidaForm = function(){
           let valida = true;
@@ -302,6 +292,11 @@ https://templatemo.com/tm-569-edu-meeting
             var myModal = new bootstrap.Modal(document.getElementById('modalMensaje'));
             myModal.show();
           }
+        }
+
+        let fnSetLocalStorage = function(){
+          localStorage.setItem('logeado', 'Si');
+          location.href = "indexLogeado.html";
         }
 
     </script>

@@ -4,7 +4,7 @@
    
   }
   .textColorWhite{
-    color:white;
+    color:white !important;
   }
   
   .btnTextColorGray{
@@ -47,6 +47,15 @@
   .no-padding-right{
       padding-right: 0px !important;
   }
+
+  .no-padding-top{
+    padding-top: 0px !important;
+}
+
+.no-padding-bottom{
+  padding-bottom: 0px !important;
+}
+
 
   .no-margin-left{
     margin-left: 0px !important;
@@ -97,8 +106,18 @@
     padding-bottom: 0px !important;
   }
 
+  .tituloCaracteristicas{
+    padding-top: 116px !important;
+    text-align: left !important;
+    padding-bottom: 0px !important;
+  }
+
   .textColorGray{
     color: #9A9A99;
+  }
+
+  .text-justify{
+    text-align: justify;
   }
 
 
