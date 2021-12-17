@@ -120,6 +120,17 @@
     text-align: justify;
   }
 
+  .form-switch{
+    padding-left: 3.5em !important;
+  }
+
+ 
+
+  .form-check-input:checked {
+    background-color: #D9C61D;
+    border-color: #D9C61D;
+  }
+
 
 
 
@@ -243,6 +254,10 @@
 
   .no-padding-top-responsivo{
     padding-top: 0px !important;
+  }
+
+  .img-responsive-declaraciones{
+    width: 20% !important;
   }
 
 }

@@ -22,13 +22,7 @@
       <link rel="stylesheet" href="assets/css/owl.css">
       <link rel="stylesheet" href="assets/css/lightbox.css">
       <link rel="stylesheet" href="assets/css/style.css">
-  <!--
 
-  TemplateMo 569 Edu Meeting
-
-  https://templatemo.com/tm-569-edu-meeting
-
-  -->
     </head>
 
   <body>
@@ -139,26 +133,33 @@
       </div>
     </section>
 
-    <section class="apply-now no-padding-top-responsivo no-padding-bottom" id="apply">
+    <section class="apply-now no-padding-bottom" id="apply">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 align-self-center">
+          <div class="form-check form-switch offset-md-6 col-lg-6 d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
+            <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+            <label class="form-check-label text-white" for="flexSwitchCheckChecked">Anónime</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 align-self-center ">
+            <label class="text-white">Agradecemos que nos puedas compartir tu historia de acoso para que otres no se sientan soles. <br><br>
+              Las historias son testimonios, son parte de nuestra vida, son historias reales que hemos vivido y que al compartirlas compartimos un aprendizaje.</label>
+            </div>
+          <div class="col-lg-6 align-self-center pt-4 pt-lg-0">
             <div class="item rounded-3 no-padding-top-responsivo" style="background-color: #1D273E;">
-              <h3 class="">¿Crees que hay suficiente apoyo sobre el ciberacoso?</h3><br>
+              <img src="assets/images/tipoLetra.png" alt="" class="img-fluid w-75">
               <textarea class="form-control textColorWhite" id="txtPreguntaSemanal" rows="5" style="background-color: #1D273E;" onkeyup="fnValidaIngresoCaracteres();"></textarea>
               
             </div>
+            <div class="form-check form-switch d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none">
+              <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+              <label class="form-check-label text-white" for="flexSwitchCheckChecked">Anónime</label>
+            </div>
             <div class="text-end">
-              <button class="btn colorgrayBottom" id="btnEnviaRespuesta" data-bs-target="#modalPreguntaSemanal" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar respuesta</button>
+              <button class="btn colorgrayBottom" id="btnEnviaRespuesta" data-bs-target="#modalPreguntaSemanal" data-bs-toggle="modal" data-bs-dismiss="modal">Enviar</button>
             </div>
           </div>
-          <div class="col-lg-6 align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            <div class="item-foto">
-              <img class="img-fluid rounded" src="assets/images/preguntaSemanal1.png" alt="" />
-            </div>
-            </div>
-          </div>
-          
         </div>
 
         <div class="footer no-margin-top-footer-responsivo">
@@ -179,7 +180,7 @@
             </div>
             </div>
       </div>
-      </div>
+    </div>
     </section>
   
     </div>
@@ -190,14 +191,14 @@
             <div class="modal-body colorFondoModalBienvenido">
              <div class="row mt-5-lg mt-0-sm">
                   <div class="col-md-12 text-center pt-5-lg pt-0-sm mt-5-lg">
-                  <label class="text-white fw-bold" style="font-size: 40px;">¡Gracias por tu respuesta!</label><br>
-                  <label class="text-white fw-bold mt-lg-4" style="font-size: 20px;">¿Quieres ver las respuestas de otres usuaries?</label><br>
+                  <label class="text-white fw-bold" style="font-size: 40px;">¡Gracias por tu Historia!</label><br>
+                  <label class="text-white fw-bold mt-lg-4" style="font-size: 20px;">Las historias son testimonios, son parte de nuestra vida, son historias reales que hemos vivido y que al compartirlas compartimos un aprendizaje.</label><br>
                 </div>
               </div>
               <div class="row text-center botoneraBienvenidoResponsivo mt-5">
                   <div class="col-md-12">
 
-                    <a href="respuestas.html" class="btn colorRedBottom">ver Respuestas</a> <br><br>
+                    <a href="confesiones.html" class="btn colorRedBottom">Ver confesiones</a> <br><br>
                   <a href="index.html" class="colorAmarilloA">Volver a HOME</a>
                   </div>
               </div>
