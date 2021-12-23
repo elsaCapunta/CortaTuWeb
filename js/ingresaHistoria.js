@@ -40,8 +40,10 @@ var validaLogeo = function(location){
     if(valida){
         if(location == 'PS'){
             window.location.href  = "pregunta-semanal.html";
+        }else if('c'){
+            window.location.href  = "confesiones.html";
         }else{
-            window.location.href  = "carasteristicas-agresor.html";
+            window.location.href  = "envianos-tu-historia.html";
         }
         
     }else{

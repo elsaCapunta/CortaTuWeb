@@ -28,39 +28,14 @@
 
   <!-- Sub Header -->
   <div class="sub-header">
-    <div class="container">
-      <div class="row">        
-        <div class="col-lg-8 col-sm-8">
-          <div class="right-icons">
-            <ul>
-              <li><a href="https://www.facebook.com/groups/951050702493025" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/_cortatuweb" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://instagram.com/cortatuweb?r=nametag" target="_blank"><i class="fa fa-instagram"></i></a></li>
-              <li class="no-margin-left"><a href="https://discord.gg/XJ45SgyH" target="_blank"><img src="assets/images/discord.svg" alt="" class="iconDiscord"></a></li>
-              
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-4 ">
-          <div class="right-icons-custom d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            
-            <div class="filters">
-              <ul>
-                <li data-filter="*" class=""><a href="login.html" class="btn colorRedBottom">Iniciar sesión</a></li>
-                <li data-filter="*" class=""><a href="registrarse.html" class="btn colorRedBottom">Registrarse</a></li>
-           
-              </ul>
-            </div>
-            
-        </div>
-      </div>
+    <div class="container" id="dvHeader">
+     
       </div>
     </div>
   </div>
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <header class="header-area header-sticky" id="header-menu">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -73,8 +48,8 @@
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         
-                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="login.html">Iniciar Sesión</a></li>
-                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="registrarse.html">Registrarse</a></li>
+                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" id="iniciar-sesion-responsivo"><a href="login.html">Iniciar Sesión</a></li>
+                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" id="registrarse-responsivo"><a href="registrarse.html">Registrarse</a></li>
                     
                         <li><a href="conocenos.html">Conócenos</a></li>
                         <li class="has-sub">
@@ -88,6 +63,7 @@
                         </li>
                         <li><a href="javascript:validaLogeo('PS')">Pregunta semanal</a></li> 
                         <li><a href="javascript:validaLogeo();">Envíanos tu historia</a></li> 
+                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" id="cerrar-sesion-responsivo"><a href="javascript:cierraSesion();">Cerrar Sesión</a></li>
                     </ul>        
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -364,7 +340,7 @@
         </div>
         <div class="col-lg-12 text-center">
           <div class="main-button-red mt-3">
-          <div class="scroll-to-section"><a href="#">Ver más Confesiones</a></div>
+          <div class=""><a href="javascript:validaLogeo('c')">Ver más Confesiones</a></div>
       </div>
         </div>
         
@@ -408,8 +384,14 @@
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/scripts.js"></script>
-    <script src="js/ingresaHistoria.js"></script>
+    <!-- <script src="js/conf.js" type="module"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="js/main.js" ></script>
+    <script src="js/app.js" type="module"></script>
     <script>
+       // fnInsertHeader();
         //according to loftblog tut
         $('.nav li:first').addClass('active');
 

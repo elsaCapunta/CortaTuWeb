@@ -28,54 +28,16 @@
   <body>
 
     
-     <!-- Sub Header -->
-     <div class="sub-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-1 col-sm-1 no-padding-right text-center">
-            <img src="assets/images/fotoPerfil.png" alt="" class="img-fluid fotoPerfilLogin2"/>
-            <label class="text-white d-inline-inline-block d-sm-inline-block d-md-none d-lg-none d-xl-none d-xxl-none">Hola! Alejandra Contretas</label><br>
-           
-          </div>
-  
-          <div class="col-lg-3 col-sm-7 no-padding-left d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            <label class="text-white">Hola!</label><br>
-            <label class="text-white">Alejandra Contretas</label>
-          </div>
-  
-  
-  
-          <div class="col-lg-4 col-sm-4">
-            <div class="right-icons">
-              <ul>
-                <li><a href="https://www.facebook.com/groups/951050702493025"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/_cortatuweb"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="https://instagram.com/cortatuweb?r=nametag"><i class="fa fa-instagram"></i></a></li>
-                <li class="no-margin-left"><a href="https://discord.gg/XJ45SgyH"><img src="assets/images/discord.svg" alt="" class="iconDiscord"></a></li>
-                
-              </ul>
-            </div>
-          </div>
-  
-          <div class="col-lg-4 col-sm-0 ">
-            <div class="right-icons-custom d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-              
-              <div class="filters">
-                <ul>
-                  <li data-filter="*" class=""><a href="perfil.html" class="btn colorRedBottom">PERFIL</a></li>
-                  <li data-filter="*" class=""><a href="javascript:cierraSesion();" class="btn colorRedBottom">CERRAR SESIÓN</a></li>
-             
-                </ul>
-              </div>
-              
-          </div>
-        </div>
-        </div>
+      <!-- Sub Header -->
+  <div class="sub-header">
+    <div class="container" id="dvHeader">
+     
       </div>
     </div>
+  </div>
 
     <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky headerResponsivoLogeado">
+    <header class="header-area header-sticky"  id="header-menu">
       <div class="container">
           <div class="row">
               <div class="col-12">
@@ -87,7 +49,8 @@
                       <!-- ***** Logo End ***** -->
                       <!-- ***** Menu Start ***** -->
                       <ul class="nav">
-                          
+                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="login.html" id="iniciar-sesion-responsivo">Iniciar Sesión</a></li>
+                        <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="registrarse.html" id="registrarse-responsivo">Registrarse</a></li>
                           <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="perfil.html">Perfil</a></li>
                           
                           <li><a href="conocenos.html">Conócenos</a></li>
@@ -102,7 +65,7 @@
                           </li>
                           <li class=""><a href="javascript:validaLogeo('PS');">Pregunta semanal</a></li> 
                           <li class=""><a href="javascript:validaLogeo();">Envíanos tu historia</a></li> 
-                          <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none"><a href="javascript:cierraSesion();">Cerrar Sesión</a></li>
+                          <li class=" d-block d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none" id="cerrar-sesion-responsivo"><a href="javascript:cierraSesion();">Cerrar Sesión</a></li>
                       </ul>        
                       <a class='menu-trigger'>
                           <span>Menu</span>
@@ -119,8 +82,8 @@
     <section class="heading-page header-text tituloCaracteristicas tituloConocenosResponsivo" id="top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-start pb-4">
-            <label class="text-white fs-1 text">Confesiones</label>
+          <div class="col-lg-12 text-start">
+            <h2 class="text-white">Confesiones</h2>
             <br>
          </div>
         </div>
@@ -129,7 +92,7 @@
 
 
 
-    <section class="apply-now no-padding-top-responsivo no-padding-bottom" id="apply">
+    <section class="apply-now no-padding-top-responsivo no-padding-bottom no-padding-top" id="apply">
       <div class="container">
         <div class="row justify-content-evenly">
           <div class="col-lg-5 align-self-center">
@@ -141,19 +104,19 @@
                 <label class="text-white fs-4 text fw-bold">Juan Carrasco</label> <br>
               </div>
               <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
-              <button type="button" class="btn colorRedBottom w-25 mt-2">Leer más</button>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/respuesta3.png','Juan Carrasco');">Leer más</button>
             </div>
           </div>
-          <div class="col-lg-5 align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
+          <div class="col-lg-5 align-self-center">
             <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
               <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta2.png" alt="" class="img-fluid pt-4">
+                <img src="assets/images/respuesta/anonimo.png" alt="" class="img-fluid img-responsive-declaraciones">
               </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Anónime</label> <br>
               </div>
-              
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/anonimo.png','Anónime');">Leer más</button>
             </div>
           </div>
         </div>
@@ -162,81 +125,25 @@
           <div class="col-lg-5 align-self-center">
             <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
               <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta3.png" alt="" class="img-fluid pt-4 img-responsive-declaraciones">
+                <img src="assets/images/respuesta/anonimo.png" alt="" class="img-fluid img-responsive-declaraciones">
               </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Anónime</label> <br>
               </div>
-              
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/anonimo.png','Anónime');">Leer más</button>
             </div>
           </div>
-          <div class="col-lg-5 align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
-              <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta4.png" alt="" class="img-fluid pt-4">
-              </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row justify-content-evenly">
           <div class="col-lg-5 align-self-center">
             <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
               <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta5.png" alt="" class="img-fluid pt-4 img-responsive-declaraciones">
+                <img src="assets/images/respuesta/martaolivar.png" alt="" class="img-fluid img-responsive-declaraciones">
               </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Marta Olivar</label> <br>
               </div>
-              
-            </div>
-          </div>
-          <div class="col-lg-5 align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
-              <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta6.png" alt="" class="img-fluid pt-4">
-              </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-
-
-        <div class="row justify-content-evenly">
-          <div class="col-lg-5 align-self-center">
-            <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
-              <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta7.png" alt="" class="img-fluid pt-4 img-responsive-declaraciones">
-              </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
-              </div>
-              
-            </div>
-          </div>
-          <div class="col-lg-5 align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
-              <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta8.png" alt="" class="img-fluid pt-4">
-              </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
-              </div>
-              
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/martaolivar.png','Marta Olivar');">Leer más</button>
             </div>
           </div>
         </div>
@@ -245,28 +152,58 @@
           <div class="col-lg-5 align-self-center">
             <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
               <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta9.png" alt="" class="img-fluid pt-4 img-responsive-declaraciones">
+                <img src="assets/images/respuesta/anonimo.png" alt="" class="img-fluid img-responsive-declaraciones">
               </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Anónime</label> <br>
               </div>
-              
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/anonimo.png','Anónime');">Leer más</button>
             </div>
           </div>
-          <div class="col-lg-5 align-self-center d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
+          <div class="col-lg-5 align-self-center">
             <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
               <div class="col-lg-2">
-                <img src="assets/images/respuesta/respuesta10.png" alt="" class="img-fluid pt-4">
+                <img src="assets/images/respuesta/anonimo.png" alt="" class="img-fluid img-responsive-declaraciones">
               </div>
-              <div class="col-lg-10">
-                <label class="text-white fs-4 text fw-bold">TANTO TANTITO</label> <br>
-                <label class="text-white fs-5 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius magna iaculis vulputate bibendum mauris mi hac. </label>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Anónime</label> <br>
               </div>
-              
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/anonimo.png','Anónime');">Leer más</button>
             </div>
           </div>
         </div>
+
+        <div class="row justify-content-evenly">
+          <div class="col-lg-5 align-self-center">
+            <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
+              <div class="col-lg-2">
+                <img src="assets/images/respuesta/respuesta4.png" alt="" class="img-fluid img-responsive-declaraciones">
+              </div>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Pedro Pérez</label> <br>
+              </div>
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/respuesta4.png','Pedro Pérez');">Leer más</button>
+            </div>
+          </div>
+          <div class="col-lg-5 align-self-center">
+            <div class="item rounded-3 no-padding-top-responsivo p-3 row" style="background-color: #1D273E;">
+              <div class="col-lg-2">
+                <img src="assets/images/respuesta/respuesta5.png" alt="" class="img-fluid img-responsive-declaraciones">
+              </div>
+              <div class="col-lg-10 pt-3">
+                <label class="text-white fs-4 text fw-bold">Camila Casas</label> <br>
+              </div>
+              <label class="text-white fs-6 text">Ornare massa orci, elit blandit sollicitudin nulla magna integer. Mauris mattis ante proin libero sit nec, cras. Turpis risus morbi interdum quis elit turpis felis fames tortor. Lectus sapien interdum maecenas posuere rutrum metus nam purus, egestas. Felis egestas sit magna molestie in.</label>
+              <button type="button" class="btn colorRedBottom w-25 mt-2 button-responsivo-confesiones" onclick="fnShowModal('assets/images/respuesta/respuesta5.png','Camila Casas');">Leer más</button>
+            </div>
+          </div>
+        </div>
+       
+
+      
 
         <div class="footer no-margin-top-footer-responsivo">
           <div class="col-lg-12 text-center">
@@ -288,18 +225,9 @@
       </div>
       </div>
     </section>
+  </div>
 
-
-
-
-
-
-
- 
-  
-    </div>
-
-    <div id="dvModalHistoria"></div>
+    <div id="dvModalConfesiones"></div>
 
     <!-- Scripts -->
     <!-- Bootstrap core JavaScript -->
@@ -314,7 +242,11 @@
       <script src="assets/js/video.js"></script>
       <script src="assets/js/slick-slider.js"></script>
       <script src="assets/js/custom.js"></script>
-      <script src="js/ingresaHistoria.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+      <script src="js/main.js" ></script>
+      <script src="js/app.js" type="module"></script>
       <script>
           //according to loftblog tut
           (function() {
@@ -379,6 +311,53 @@
           $(window).scroll(function () {
             checkSection();
           });
+
+
+          function fnShowModal(foto, nombre){
+            document.getElementById("dvModalConfesiones").innerHTML = "";
+            let htmlModal = '<div class="modal fade" id="modalConfesion" aria-hidden="true" aria-labelledby="modalConfesion" tabindex="-1">'
+                             +' <div class="modal-dialog modal-dialog-centered modal-dialog modal-md">'
+                              +' <div class="modal-content">'
+                                +'  <div class="modal-body colorFondoModalBienvenido">'
+
+                                  +'  <div class="row">'
+                                    +'  <div class="col-md-12 text-center pt-5-lg pt-0-sm">'
+                                      +' <img src="'+foto+'" alt="" class="img-fluid w-25 img-responsive-declaraciones"> '
+                                      +'</div>'
+                                      +'</div>' // row
+
+                                      +'<div class="row text-center botoneraBienvenidoResponsivo mt-2">'
+                                        +'<div class="col-md-12">'
+                                          +'<label class="text-white fs-4 text fw-bold">'+nombre+'</label>'
+                                        +'</div>'
+                                      +'</div>' // row
+
+                                      +'<div class="row text-center botoneraBienvenidoResponsivo mt-2">'
+                                        +'<div class="col-md-12">'
+                                          +'<textarea class="form-control textColorWhite" id="txtPreguntaSemanal" rows="10" style="background-color: #1D273E;" readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</textarea>'
+                                        +'</div>'
+                                      +'</div>'// row
+                                      
+                                      +'<div class="row text-center botoneraBienvenidoResponsivo mt-5">'
+                                        +'<div class="col-md-12">'
+                                          +'<a href="index.html" class="btn colorRedBottom">Volver a HOME</a><br>'
+                                          +'<a href="index.html" class="colorAmarilloA" data-bs-dismiss="modal">Cerrar</a>'
+                                        +'</div>'
+                                      +'</div>'
+
+                                    +'</div>'
+                                  +'</div>'
+                                +'</div>'
+                              +'</div>';
+          
+          document.getElementById("dvModalConfesiones").innerHTML += htmlModal;
+          var myModal = new bootstrap.Modal(document.getElementById('modalConfesion'), {
+                              keyboard: false
+                            });
+            myModal.show();
+          }
+
+
       </script>
   </body>
 

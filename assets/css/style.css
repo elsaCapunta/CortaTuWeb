@@ -260,6 +260,10 @@
     width: 20% !important;
   }
 
+  .button-responsivo-confesiones{
+    width: 100% !important;
+  }
+
 }
   
  /* @media (min-width: 576px) and (max-width: 767.98px) { 

@@ -22,13 +22,6 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
     <link rel="stylesheet" href="assets/css/style.css">
-<!--
-
-TemplateMo 569 Edu Meeting
-
-https://templatemo.com/tm-569-edu-meeting
-
--->
   </head>
 
 <body>
@@ -37,34 +30,8 @@ https://templatemo.com/tm-569-edu-meeting
 
   <!-- Sub Header -->
   <div class="sub-header">
-    <div class="container">
-      <div class="row">        
-        <div class="col-lg-8 col-sm-8">
-          <div class="right-icons">
-            <ul>
-              <li><a href="https://www.facebook.com/groups/951050702493025"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="https://twitter.com/_cortatuweb"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://instagram.com/cortatuweb?r=nametag"><i class="fa fa-instagram"></i></a></li>
-              <li class="no-margin-left"><a href="https://discord.gg/XJ45SgyH"><img src="assets/images/discord.svg" alt="" class="iconDiscord"></a></li>
-              
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-sm-4 ">
-          <div class="right-icons-custom d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            
-            <div class="filters">
-              <ul>
-                
-                <li data-filter="*" class=""><a href="registrarse.html" class="btn colorRedBottom">Registrarse</a></li>
-           
-              </ul>
-            </div>
-            
-        </div>
-      </div>
-      </div>
+    <div class="container" id="dvHeader">
+     
     </div>
   </div>
 
@@ -155,8 +122,9 @@ https://templatemo.com/tm-569-edu-meeting
 
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mx-auto2 text-end mt-2">
 
-                    <button type="button" class="btn btnTextColorWhite rounded-pill w-100" data-bs-toggle="modal" data-bs-target="#exampleModal"><strong><img
-                                src="assets/images/icons8-logo-de-google.svg" style="width: 20px;" /> Iniciar sesión </strong></button>
+                    <button id="button-login" type="button" class="btn btnTextColorWhite rounded-pill w-100"><strong>
+                      <img src="assets/images/icons8-logo-de-google.svg" style="width: 20px;" /> Iniciar sesión </strong>
+                    </button>
                 </div>
         </form>
 
@@ -164,51 +132,6 @@ https://templatemo.com/tm-569-edu-meeting
     </div>
     </div>
   </section>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-
-      <div class="modal-body">
-        <div class=" row text-center">
-          <div class="col-md-12">
-            <img src="assets/images/google logo.png" alt="" class="img-fluid" style="width: 10%;"/>
-          </div>
-        </div>
-        <div class="row text-center mt-2">
-          <div class="col-md-12">
-            <h5 class="modal-title text-black" id="exampleModalLabel">Selecciona una cuenta</h5>
-          </div>
-        </div>
-        <hr>
-        <div class="row mt-5-lg mt-0-sm divfotoPerfilResponsivo">
-          <div class="col-md-2">
-            <img src="assets/images/fotoPerfil.png" alt="" class="img-fluid fotoPerfilResponsivo"/>
-          </div>
-          <div class="col-md-8">
-            <label class="fw-bold">Alejandra Contreras</label><br>
-            <label>alejandra.contreras@gmail.com</label>
-          </div>
-          <div class="col-md-2 d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block">
-            <img src="assets/images/iconDespliege.png" alt="" class="img-fluid" style="width: 50%;"/>
-          </div>
-        </div>
-        <div class="row text-center mt-5">
-          <div class="col-md-12">
-            <button class="btn btn-primary w-100" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Continuar como Alejandra </button>
-          </div>
-        </div>
-        <div class="row text-center mt-2 mb-3">
-          <div class="col-md-12">
-            <button type="button" class="btn btn-secondary w-100" data-bs-dismiss="modal">No gracias</button>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered modal-dialog modal-lg">
@@ -279,8 +202,13 @@ https://templatemo.com/tm-569-edu-meeting
     <script src="assets/js/video.js"></script>
     <script src="assets/js/slick-slider.js"></script>
     <script src="assets/js/custom.js"></script>
-    <script src="js/ingresaHistoria.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-firestore.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <script src="js/main.js"></script>
     <script>
+       // fnInsertHeader();
         let fnValidaForm = function(){
           let valida = true;
           if(document.getElementById('inpEmail').value != "" && document.getElementById('inpContrasena').value != ""){
@@ -296,7 +224,7 @@ https://templatemo.com/tm-569-edu-meeting
 
         let fnSetLocalStorage = function(){
           localStorage.setItem('logeado', 'Si');
-          location.href = "indexLogeado.html";
+          location.href = "index.html";
         }
 
     </script>
